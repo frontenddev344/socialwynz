@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* global css start */
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    background-color: #f4f4f1;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.pt-50{
+padding-top: 3.125rem;
+}
+.pb-50{
+    padding-bottom: 3.125rem;
+}
+.ptb-50{
+    padding: 3.125rem 0;
+}
+.pt-70{
+    padding-top: 4.375rem;
+}
+.pb-70{
+    padding-bottom: 4.375rem;
+}
+.ptb-70{
+    padding: 4.375rem  0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-md-4{
+    width: 32%;
+}
+.col-md-6{
+    width: 49%;
+}
+
+/* global css end */
+/* header section css start */
+.site-header{
+    background-color: #211f2c;
+    padding: 0.625rem 0;
+}
+
+.site-logo  img {
+    max-width: 13.75rem;
+}
+.main-nav ul li a {
+    font-size: 0.9375rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s linear ;
+
+}
+.main-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e52d36;
+    /* transition: all .3s linear ; */
+    transition: transform .2s ease-in-out, color .0s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.main-nav ul li a:hover::before, .main-nav ul li a.active{
+width: 100%;
+}
+.main-nav ul li a:hover, .main-nav ul li a.active{
+    color: #e52d36;
+}
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav ul li {
+    padding: 0px 1.5625rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close, .toggle{
+    display: none;
+}
+
+/* header section css end */
+/* banner section css start */
+.site-banner{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40.625rem;
+    position: relative;
+}
+.site-banner::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+.banner-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner-text h1 {
+    font-size: 4.375rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-text p {
+    font-size: 1.375rem;
+    color: #fff;
+}
+.top-text p{
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+/* banner section css end */
+/* signup section css start */
+.signup-sec{
+    background-image: url(../images/signup-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.signup-sec::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+.signup-wrap{
+    position: relative;
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
+}
+.signup-heading h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-align: center;
+}
+.signup-btn a{
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.9375rem  2.8125rem;
+    background-color: #e52d36;
+    border: 2px solid #e52d36;
+    color: #fff;
+    display: inline-block;
+    margin: 1.875rem 5px 0;
+    transition: all 0.3s linear;
+}
+.signup-btn a:hover, .newsletter-wrap button:hover{
+    background-color: transparent;
+    color: #e52d36;
+}
+/* signup section css end */
+/* Featured Games section css start */
+
+.site-heading  h2 {
+    font-size: 2.8125rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #211f2c;
+}
+.featured-wrap {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 0.625rem;
+}
+.featured-bx{
+    /*width: 25%;*/
+    height: 13.75rem;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.featured-bx:hover img{
+    transform: scale(1.2);
+}
+
+.featured-bx img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+
+}
+/* Featured Games section css end */
+
+/* why choose us section css start */
+.why-choose {
+    background-color: #23202b;
+}
+.why-choose .site-heading h2{
+    color: #fff;
+}
+.site-heading p {
+    font-size: 1rem;
+    text-align: center;
+    color: #d8d8d8;
+}
+.site-heading {
+    max-width: 53.125rem;
+    margin: auto;
+    padding: 0  1.25rem;
+    margin-bottom: 3.125rem;
+}
+.choose-img {
+    max-width: 5rem;
+    height: 5rem;
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 0.9375rem;
+}
+.choose-wrap {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #ffffff;
+    text-align: center;
+    padding: 1.5625rem;
+    height: 100%;
+    border-radius: 8px;
+    transition: all .3s linear ;
+}
+.choose-wrap:hover{
+    background: linear-gradient(14deg, rgba(221,12,22,1) 22%, rgba(229,45,54,1) 47%, rgba(195,24,32,1) 83%);
+}
+.choose-wrap:hover .choose-text h4{
+    color: #fff;
+}
+.choose-wrap:hover .choose-text p{
+    color: #d8d8d8;
+}
+.choose-wrap:hover .choose-img img{
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+.choose-text h4 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+    color: #111;
+}
+.choose-text p {
+    font-size: 1rem;
+    color: #666;
+}
+.why-choose .col-md-4 {
+    margin: 0.75rem 0;
+}
+/* why choose us section css end */
+/* newsletter section css start */
+.newsletter-sec{
+    background-image: url(../images/newsletter-bg.jpg);
+}
+.newsletter-wrap {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.newsletter-wrap input {
+    width: 80%;
+    height: 3rem;
+    padding: 0 1.25rem;
+}
+.newsletter-wrap button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #e52d36;
+    border: 2px solid #e52d36;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.3s linear;
+    width: 20%;
+    height: 3rem;
+    cursor: pointer;
+}
+/* newsletter section css end */
+
+/* accordion section css start */
+
+.accordion {
+    background-color: #23202b;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 0fr;
+    overflow: hidden;
+    transition: grid-template-rows .3s cubic-bezier(.19, 1, .22, 1);
+    margin: .75rem 0
+}
+
+.accordion .top {
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .75rem .9375rem;
+    display: flex;
+    position: relative;
+}
+
+.accordion .top .text {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: wrap;
+    color: #ffffff;
+}
+
+.accordion .top img {
+    width: 1.5rem;
+    align-self: flex-start;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+    filter: brightness(0) invert(1);
+}
+
+.accordion .top input {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    appearance: none
+}
+
+.accordion .bottom {
+    padding-inline: 1.5rem;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.19, 1, .22, 1)
+}
+
+.accordion .bottom .text {
+    margin-left: 0;
+    margin: 0;
+    font-size: .9785rem;
+    color: #fbfbfb;
+    margin-bottom: 0.625rem;
+}
+
+.accordion:has(input:checked) {
+    grid-template-rows: .1fr 1fr
+}
+
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(45deg)
+}
+
+/* accordion section css end */
+
+/* footer section css start */
+
+.site-footer, .disclaimer-sec {
+    background-color: #23202b;
+}
+.footer-logo img {
+    max-width: 15.625rem;
+}
+.footer-heading h4 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer-heading {
+    margin-bottom: 0.9375rem;
+}
+.footer-links ul li a {
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.footer-links ul li a:hover{
+    color: #e52d36;
+}
+.footer-links ul li{
+    padding: 3px 0;
+}
+/* footer section css end */
+/* disclaimer section css start */
+.disclaimer-sec{
+    border-top: 1px solid #ffffff1a;
+}
+.disclaimer-text h4 {
+    font-size: 1.125rem;
+    color: #9b9b9b;
+    margin-bottom: 0.9375rem;
+}
+.disclaimer-text p {
+    font-size: 0.875rem;
+    color: #9b9b9b;
+    margin-bottom: 0.625rem;
+}
+.disclaimer-text p strong{
+    color: #9b9b9b;
+}
+.disclaimer-text ul li {
+    font-size: 0.75rem;
+    color: #9b9b9b;
+    padding: 2px 0; 
+    /* list-style: auto; */
+}
+.disclaimer-text ul{
+    margin: 0.9375rem 0;
+}
+.disclaimer-text{
+    text-align: center;
+}
+.disclaimer-wrap{
+    max-width: 80%;
+    margin: auto;
+}
+.social-links ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.social-links ul li a:hover img{
+    filter: brightness(2) invert(1);
+}
+.social-links ul li a img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.social-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-links ul li{
+    padding: 0  0.9375rem;
+}
+.social-links {
+    margin-top: 1.875rem;
+}
+/* disclaimer section css end */
+
+/* copy right section css start */
+.copy-right {
+    padding: 0.625rem;
+    background-color: #111;
+}
+.copy-wrap p{
+    font-size: 0.875rem;
+    color: #777;
+}
+.copy-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ssl-logo{
+    max-width: 9.375rem;
+}
+
+/* copy right section css end */
+
+/* game page css start */
+.social-game, .how-to-play{
+    background-image: url(../images/bg02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/* .social-game::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #211f2c;
+    opacity: 0.2;
+} */
+.site-banner.sub-banner {
+    height: 34.375rem;
+}
+.sub-banner .banner-text h1 {
+    font-size: 3.75rem;
+}
+.social-wrap{
+    height: 18.75rem;
+    width: 100%;
+    overflow: hidden;
+}
+.social-wrap:hover img{
+    transform: scale(1.2);
+
+}
+.social-wrap img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+.social-game .col-md-4 {
+    margin: 0.75rem 0;
+}
+
+/* game page css end */
+/* how to play section css start */
+.play-wrap, .set-wrap {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.5625em;
+    background: #fff;
+    height: 100%;
+    border-radius: 8px;
+}
+.play-text h4 {
+    font-size: 1.125rem;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    color: #111;
+}
+.play-text ul li {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #333;
+}
+.play-count {
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #23202b;
+    margin-bottom: 0.9375rem;
+    border: 1px solid #23202b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.play-count span {
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.how-to-play .row{
+    justify-content: flex-start;
+}
+ .set-us .row {
+    justify-content: center;
+}
+.how-to-play .col-md-4, .set-us .col-md-4 {
+    padding: 0.75rem;
+}
+/* how to play section css end */
+
+/* set us section css start */
+.set-us{
+    /* background-color: #23202b; */
+    background-image: url(../images/setup-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.set-us .site-heading h2 {
+    color: #ffffff;
+}
+.set-text h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    color: #23202b;
+}
+.set-text p {
+    font-size: 1rem;
+    color: #666;
+}
+.set-text {
+    text-align: center;
+}
+/* set us section css end */
+
+/* our mission section css start */
+.mission-text h3 {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+    color: #23202b;
+}
+.mission-text p {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    color: #666;
+}
+.mission-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+overflow: hidden;
+}
+.mission-img:hover img{
+    transform: scale(1.2);
+
+}
+.mission-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+
+}
+/* our mission section css end */
+/* privacy page css start */
+.privacy-wrap{
+    margin: 1.875rem 0;
+}
+.privacy-wrap p{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.625rem;
+}
+.privacy-wrap  strong{
+    color: #000;
+}
+.privacy-wrap a{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+}
+.privacy-wrap ul{
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0.625rem 0;
+}
+.privacy-wrap ul li{
+    padding: 2px 0;
+    color: #666;
+    font-size: 1rem;
+}
+.privacy-wrap ul li::marker{
+    color: #000;
+}
+.privacy-wrap h4{
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 0.625rem;
+}
+.privacy-dis{
+    padding: 1.875rem 0;
+}
+.privacy-dis .social-links {
+    margin-top: 0;
+}
+/* privacy page css end */

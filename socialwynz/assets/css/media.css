@@ -1,0 +1,224 @@
+@media(max-width:1050px){
+    html{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:992px){
+    .banner-text h1 {
+        font-size: 3.8rem;
+    }
+    .site-banner {
+        height: 37rem;
+    }
+    .featured-wrap {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .featured-bx {
+        width: 32%;
+    }
+    .main-nav ul {
+        align-items: start;
+        flex-direction: column;
+    }
+    .main-nav ul li {
+        padding: 10px 0;
+    }
+    .main-nav {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translate(100%, -50%);
+        height: 95vh;
+        width: 300px;
+        background: #f4f4f1;
+        z-index: 99;
+        padding: 50px 40px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 0.3s linear;
+}
+    .menuToggle .main-nav{
+        transform: translate(-20px, -50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+    .main-nav ul li a {
+        color: #211f2c;
+    }
+    .close {
+        display: block;
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .menuToggle::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: #000;
+        z-index: 9;
+        opacity: 0.7;
+    }
+    .toggle{
+        display: block;
+        width: 25px;
+        filter: brightness(0) invert(1);
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 3.4rem;
+    }
+    .site-banner.sub-banner {
+        height: 30rem;
+    }
+    .how-to-play .col-md-4 {
+        width: 50%;
+    }
+ 
+}
+
+@media(max-width:850px){
+    .banner-text h1 {
+        font-size: 3.5rem;
+    }
+    .signup-heading h3 {
+        font-size: 2.2rem;
+    }
+    .site-heading  h2 {
+        font-size: 2.5rem;
+    }
+    .featured-bx {
+        width: 48%;
+    }
+    .why-choose .col-md-4 {
+        width: 48.5%;
+    }
+    .footer-logo img {
+        max-width: 14rem;
+    }
+    .disclaimer-wrap {
+        max-width: 95%;
+    }
+    .social-game .col-md-4 {
+        width: 48.5%;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 3.1rem;
+    }
+    .set-us .col-md-4 {
+        width: 50%;
+    }
+ 
+}
+
+@media(max-width:767px){
+    .site-footer .col-md-4 {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .footer-heading {
+        margin-bottom: 0.625rem;
+    }
+    .our-mission .row{
+        flex-direction: column-reverse;
+    }
+    .our-mission .col-md-6 {
+        width: 100%;
+    }
+    .mission-img {
+        height: 350px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:575px){
+    html{
+        font-size: 14px;
+    }
+    .banner-text h1 {
+        font-size: 3.2rem;
+    }
+    .site-banner {
+        height: 32rem;
+    }
+    .signup-heading h3 {
+        font-size: 2rem;
+    }
+    .site-heading  h2 {
+        font-size: 2.3rem;
+    }
+    .site-heading {
+        margin-bottom: 2.8rem;
+    }
+    .featured-bx {
+        width: 100%;
+    }
+    .why-choose .col-md-4 {
+        width: 100%;
+    }
+    .newsletter-wrap {
+        max-width: 80%;
+        flex-direction: column;
+    }
+    .newsletter-wrap input {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #fff;
+    }
+    .newsletter-wrap button {
+        width: 40%;
+        border-radius: 8px;
+    }
+    .main-nav {
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        transform: translate(100%, 0%);
+    }
+    .menuToggle .main-nav {
+        transform: translate(0px, 0%);
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.8rem;
+    }
+    .site-banner.sub-banner {
+        height: 25rem;
+    }
+    .social-game .col-md-4 {
+        width: 100%;
+    }
+    .how-to-play .col-md-4 {
+        width: 100%;
+    }
+    .set-us .col-md-4 {
+        width: 100%;
+    }
+}
+@media(max-width:375px){
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+    .signup-btn a {
+
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .signup-btn {
+        margin-top: 30px;
+    }
+    .mission-img {
+        height: 300px;
+    }
+}
