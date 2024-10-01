@@ -719,3 +719,98 @@ overflow: hidden;
     margin-top: 0;
 }
 /* privacy page css end */
+
+/* contact us main section css start */
+
+.contact-wrap h4, .contact-heading h4{
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    color: #23202b;
+}
+.contact-wrap p, .contact-heading p{
+    font-size: 1rem;
+    color: #666;
+}
+.contact-wrap p a{
+text-decoration: underline;
+color: #211f2c;
+font-weight: 500;
+}
+.contact-wrap p strong{
+    color: #211f2c;
+}
+.contact-wrap{
+    margin: 1.5625rem 0;
+}
+.contact-wrap ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1875rem;
+    width: 2.1875rem;
+    padding: 5px;
+    border: 2px solid #211f2c;
+    background-color: #211f2c;
+    transition: all 0.3s linear;
+
+}
+.contact-wrap ul li a:hover{
+    background-color: transparent;
+}
+.contact-wrap ul li a:hover img{
+    filter: brightness(2) invert(1);
+
+}
+.contact-wrap ul li a img{
+    filter: brightness(0) invert(1);
+    transition: all 0.3s linear;
+}
+.contact-wrap ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 1.25rem;
+}
+.form-group label{
+    display: block;
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 5px
+}
+.form-group input, .form-group textarea{
+width: 100%;
+height: 2.8125rem;
+padding: 10px;
+border: 2px solid #211f2c;
+border-radius: 8px;
+}
+.form-group textarea{
+    height: 12.5rem;
+    resize: none;
+}
+.form-group{
+    margin: 0.9375rem 0;
+}
+.form-group button{
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #e52d36;
+    border: 2px solid #e52d36;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.3s linear;
+    padding: 0.9375rem 2.1875rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-group button:hover{
+    background-color: transparent;
+    color: #e52d36;
+}
+.contact-form {
+    background: #fff;
+    padding: 1.5625rem;
+}
+/* contact us main section css end */

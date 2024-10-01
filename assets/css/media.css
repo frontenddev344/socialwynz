@@ -115,6 +115,13 @@
     .set-us .col-md-4 {
         width: 50%;
     }
+    .contact-main .row {
+        flex-direction: column;
+    }
+    .contact-main .col-md-6{
+        width: 100%;
+        
+    }
  
 }
 
