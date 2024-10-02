@@ -1,15 +1,3 @@
-// Define the scroll threshold (in pixels)
-const scrollThreshold = 100;
-const header = document.getElementById('header');
-
-window.addEventListener('scroll', function() {
-  // Check if window scroll position is greater than the threshold
-  if (window.scrollY > scrollThreshold) {
-    header.classList.add('scrolled');  // Add class when scrolled past threshold
-  } else {
-    header.classList.remove('scrolled');  // Remove class when above threshold
-  }
-});
 
 
 
@@ -25,3 +13,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // Toggle Menu Functionaliy End
+
+
+
+function validateEmail() {
+  const emailInput = document.getElementById('email');
+  
+  // Check if the email is valid using the built-in HTML5 email validation
+  if (!emailInput.checkValidity()) {
+    alert(emailInput.validationMessage);
+  } else {
+    alert("Thank you for signing up!");
+  }
+}
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const subject = document.getElementById('subject');
+  const message = document.getElementById('message');
+  
+  if (!name.checkValidity()) {
+    alert("Please enter a valid name (between 2 and 50 characters).");
+  } else if (!email.checkValidity()) {
+    alert("Please enter a valid email address.");
+  } else if (!subject.checkValidity()) {
+    alert("Please enter a valid subject (between 3 and 100 characters).");
+  } else if (!message.checkValidity()) {
+    alert("Please enter a message between 10 and 500 characters.");
+  } else {
+    alert("Form submitted successfully!");
+    // You can add your form submission logic here (e.g., sending data via AJAX)
+  }
+});
