@@ -234,7 +234,7 @@ nav {
   gap: 0.625rem;
 }
 .featured-bx {
-  /*width: 25%;*/
+  width: 20%;
   height: 13.75rem;
   transition: transform 0.5s ease-in-out;
   border-radius: 8px;

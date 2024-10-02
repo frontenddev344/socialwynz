@@ -206,6 +206,11 @@
   .set-us .col-md-4 {
     width: 100%;
   }
+  .copy-wrap {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
 }
 @media (max-width: 375px) {
   .banner-text h1 {
